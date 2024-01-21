@@ -17,4 +17,4 @@ Your credentials will be
 * password = GoTechMavs!
 
 ## Overview 
-You now have a version of phpMyAdmin on your computer that is forgetful.  You can play around with the databases as much as you want.  Each type you close your container, it will reset everything back to the first usage. 
+You now have a version of phpMyAdmin on your computer that can be forgetful.  If you stop and start the container it will remember the data. If you delete the container and run the docker compose command again, it will do a fresh install. 
