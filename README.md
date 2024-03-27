@@ -11,10 +11,5 @@ docker compose up --build
 ## Step 2 
 go to the web address localhost:8080 and verify that the phpMyAdmin Login is there. 
 
-Your credentials will be 
-* database = mysql
-* user = root
-* password = GoTechMavs!
-
 ## Overview 
 You now have a version of phpMyAdmin on your computer that can be forgetful.  If you stop and start the container it will remember the data. If you delete the container and run the docker compose command again, it will do a fresh install. 
