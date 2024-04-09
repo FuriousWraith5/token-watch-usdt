@@ -4,8 +4,11 @@ services:
     image: mysql
     environment: 
       MYSQL_ROOT_PASSWORD: GoTechMavs!
-    expose: 
-      - 3306
+      MYSQL_USER: web
+      MYSQL_PASSWORD: AGoodPassword
+    command: --default-authentication-plugin=mysql_native_password
+    ports: 
+      - 3306:3306
   
   phpMyAdmin: 
     image: phpmyadmin 
