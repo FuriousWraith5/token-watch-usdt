@@ -1,12 +1,11 @@
-
 services:
   mysql:
-    image: mysql:8.2
+    image: mysql
     environment: 
-      MYSQL_ROOT_PASSWORD: GoTechMavs!
+      MYSQL_ROOT_PASSWORD: GoTechTigers!
       MYSQL_USER: web
       MYSQL_PASSWORD: AGoodPassword
-    command: --default-authentication-plugin=mysql_native_password
+    container_name: mysql
     ports: 
       - 3306:3306
   
@@ -15,7 +14,7 @@ services:
     environment: 
       PMA_HOST: mysql
       PMA_USER: root 
-      PMA_PASSWORD: GoTechMavs!
+      PMA_PASSWORD: GoTechTigers!
+    container_name: phpMyAdmin
     ports: 
       - 8080:80 
-
